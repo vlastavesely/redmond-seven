@@ -9,17 +9,6 @@
 
 @import url("button/gtk-button.css");
 @import url("check/gtk-check.css");
+@import url("frame/gtk-frame.css");
 @import url("radio/gtk-radio.css");
 
-
-
-/* Check, Radio
-   ========================================================================== */
-
-check,
-radio,
-check:disabled,
-radio:disabled {
-    border: none;
-    background-color: transparent;
-}

@@ -1,4 +1,20 @@
 * {
 	background: @bg_color;
 	color: @fg_color;
+	-GtkCheckButton-indicator-size: 15;
+}
+
+@import url("check/gtk-check.css");
+@import url("radio/gtk-radio.css");
+
+
+/* Check, Radio
+   ========================================================================== */
+
+check,
+radio,
+check:disabled,
+radio:disabled {
+    border: none;
+    background-color: transparent;
 }

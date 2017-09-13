@@ -1,0 +1,24 @@
+radio,
+.view.cellradio {
+	-gtk-icon-source: -gtk-scaled(url("radio-unchecked.png"));
+}
+
+radio:checked {
+	-gtk-icon-source: -gtk-scaled(url("radio-checked.png"));
+}
+
+radio:disabled {
+	-gtk-icon-source: -gtk-scaled(url("radio-unchecked-insensitive.png"));
+}
+
+radio:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("radio-checked-insensitive.png"));
+}
+
+radio:indeterminated {
+	-gtk-icon-source: -gtk-scaled(url("radio-mixed.png"));
+}
+
+radio:indeterminated:disabled {
+	-gtk-icon-source: -gtk-scaled(url("radio-mixed-insensitive.png"));
+}

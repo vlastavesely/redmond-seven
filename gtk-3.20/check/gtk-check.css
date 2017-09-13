@@ -1,0 +1,35 @@
+check,
+check row:selected,
+check row:selected:focus {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-unchecked.png"));
+}
+
+check:checked,
+check row:selected:checked,
+check row:selected:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-checked.png"));
+}
+
+check:checked:disabled,
+check row:selected:checked:disabled,
+check row:selected:focus:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-checked-insensitive.png"));
+}
+
+check:disabled,
+check row:selected:disabled,
+check row:selected:focus:disabled  {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-insensitive.png"));
+}
+
+check:indeterminated,
+check row:selected:indeterminated,
+check row:selected:focus:indeterminated {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-mixed.png"));
+}
+
+check:indeterminated:disabled,
+check row:selected:indeterminated:disabled,
+check row:selected:focus:indeterminated:disabled {
+	-gtk-icon-source: -gtk-scaled(url("checkbox-mixed-insensitive.png"));
+}

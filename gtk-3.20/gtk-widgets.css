@@ -1,11 +1,16 @@
 * {
-	background: @bg_color;
-	color: @fg_color;
 	-GtkCheckButton-indicator-size: 15;
 }
 
+.background {
+	background-color: @bg_color;
+	color: @fg_color;
+}
+
+@import url("button/gtk-button.css");
 @import url("check/gtk-check.css");
 @import url("radio/gtk-radio.css");
+
 
 
 /* Check, Radio

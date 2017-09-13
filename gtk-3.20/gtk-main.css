@@ -4,4 +4,7 @@
 @define-color base_color #ffffff;
 @define-color text_color #000000;
 
+@define-color insensitive_text_color #808080;
+@define-color insensitive_shadow_color @base_color;
+
 @import url("gtk-widgets.css");

@@ -1,0 +1,9 @@
+.caja-side-pane treeview.view,
+.caja-side-pane textview.view text,
+.caja-side-pane viewport.frame,
+.caja-side-pane widget .vertical {
+	background: @base_color;
+}
+.caja-navigation-window .view {
+	background: @base_color;
+}

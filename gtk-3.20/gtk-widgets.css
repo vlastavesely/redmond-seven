@@ -1,0 +1,4 @@
+* {
+	background: @bg_color;
+	color: @fg_color;
+}

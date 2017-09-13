@@ -1,0 +1,7 @@
+/* Default color scheme */
+@define-color bg_color #d4d0c8;
+@define-color fg_color #000000;
+@define-color base_color #ffffff;
+@define-color text_color #000000;
+
+@import url("gtk-widgets.css");

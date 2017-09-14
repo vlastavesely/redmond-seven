@@ -1,0 +1,23 @@
+menu {
+	border-image: url("menu.png");
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 3 3 3 3;
+}
+menubar > menuitem {
+	border: solid 1px @bg_color;
+	padding: 4px 6px;
+}
+menubar > menuitem:hover {
+	border-image: url("menubar-button-active.png");
+	border-image-slice: 1 1 1 1;
+}
+menuitem {
+	padding: 7px;
+}
+menu separator {
+	background-image: url("menu-separator.png");
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 1px;
+}

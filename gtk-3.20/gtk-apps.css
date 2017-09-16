@@ -7,3 +7,29 @@
 .caja-navigation-window .view {
 	background: @base_color;
 }
+.caja-navigation-window tab button,
+.caja-navigation-window tab button:active:hover {
+	padding: 0px;
+}
+
+
+PanelToplevel > grid {
+	border-image: url("button/button.png") 2 / 2px stretch;
+	margin: -2px -2px 0 -2px;
+	padding: 4px;
+}
+#clock-applet-button {
+	border: 0;
+}
+
+MatePanelAppletFrameDBus {
+	background: transparent no-repeat left center url("mate/panel-frame.png");
+}
+MatePanelAppletFrameDBus PanelSeparator {
+	border: solid 3px blue;
+}
+
+.mate-panel-menu-bar {
+	border-image: url("menu/menubar-button-active.png") 2 / 2px stretch;
+	padding: 0 6px;
+}

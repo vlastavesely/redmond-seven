@@ -11,8 +11,8 @@ button:active {
 button:focus {
 	border-image: url("button-focus.png") 3 / 3px stretch;
 }
-button:insensitive {
-	border-image: url("button-insensitive.png") 3 / 3px stretch;
+button:disabled {
+	border-image: url("button-disabled.png") 3 / 3px stretch;
 	color: @insensitive_text_color;
 	text-shadow: 1px 1px @insensitive_shadow_color;
 }

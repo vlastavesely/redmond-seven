@@ -1,0 +1,8 @@
+toolbar button {
+	border: 0;
+}
+toolbar separator {
+	background-image: url("separator.png");
+	margin: 3px;
+	padding: 1px;
+}

@@ -1,10 +1,12 @@
 progressbar {
+	font-size: .8em;
+}
+progressbar trough {
 	background: @bg_color;
 	border: solid 1px #808080;
 	border-bottom-color: white;
 	border-right-color: white;
-	font-size: 0;
-	padding: 1px;
+	padding: 1px;	
 }
 progressbar progress {
 	background: @selected_bg_color;

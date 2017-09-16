@@ -3,21 +3,27 @@ menu {
 	border-style: solid;
 	border-width: 3px;
 	border-image-slice: 3 3 3 3;
+	padding: 3px;
 }
 menubar > menuitem {
 	border: solid 1px @bg_color;
 	padding: 4px 6px;
 }
 menubar > menuitem:hover {
+	background: transparent;
 	border-image: url("menubar-button-active.png");
 	border-image-slice: 1 1 1 1;
+	color: @fg_color;
 }
 menuitem {
-	padding: 7px;
+	padding: 5px 12px;
+}
+menuitem:hover {
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
 }
 menu separator {
-	background-image: url("menu-separator.png");
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 1px;
+	border-top: solid 1px #808080;
+	border-bottom: solid 1px #ffffff;
+	margin: 2px 5px;
 }

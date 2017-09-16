@@ -1,6 +1,7 @@
 radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("radio-unchecked.png"));
+	margin: 2px;
 }
 
 radio:checked {

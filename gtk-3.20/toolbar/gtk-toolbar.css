@@ -1,8 +1,11 @@
 toolbar button {
 	border: 0;
 }
+toolbar button:disabled {
+	border: 0;
+}
 toolbar separator {
-	background-image: url("separator.png");
+	border-left: solid 1px #808080;
+	border-right: solid 1px #ffffff;
 	margin: 3px;
-	padding: 1px;
 }

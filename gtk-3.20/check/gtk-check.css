@@ -2,6 +2,7 @@ check,
 check row:selected,
 check row:selected:focus {
 	-gtk-icon-source: -gtk-scaled(url("checkbox-unchecked.png"));
+	margin: 2px;
 }
 
 check:checked,

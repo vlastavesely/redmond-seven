@@ -5,9 +5,13 @@ button {
 button:active {
 	border-image: url("button-active.png") 3 / 3px stretch;
 }
-button:active:hover,
-button.toggle:checked {
+button:active:hover {
 	border-image: url("button-pressed.png") 3 / 3px stretch;
+	padding: 6px 4px 4px 6px;
+}
+button.toggle:checked {
+	background-color: @base_color;
+	border-image: url("button-toggled.png") 3 / 3px stretch;
 	padding: 6px 4px 4px 6px;
 }
 button:focus {

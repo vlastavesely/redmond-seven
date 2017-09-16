@@ -16,7 +16,7 @@ menubar > menuitem:hover {
 	color: @fg_color;
 }
 menuitem {
-	padding: 5px 12px;
+	padding: 5px;
 }
 menuitem:hover {
 	background-color: @selected_bg_color;
@@ -25,5 +25,5 @@ menuitem:hover {
 menu separator {
 	border-top: solid 1px #808080;
 	border-bottom: solid 1px #ffffff;
-	margin: 2px 5px;
+	margin: 3px 5px;
 }

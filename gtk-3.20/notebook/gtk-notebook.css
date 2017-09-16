@@ -62,18 +62,21 @@ notebook > header.right tab:checked {
 }
 
 notebook > header.top tab:checked label {
-	margin-top: -3px;
+	margin-top: -4px;
 }
 notebook > header.bottom tab:checked label {
-	margin-top: 3px;
+	margin-top: 4px;
 }
 notebook > header.left tab:checked label {
-	margin-left: -3px;
+	margin-left: -4px;
 }
 notebook > header.right tab:checked label {
-	margin-right: -3px;
+	margin-right: -4px;
 }
 
 notebook > header tab button {
 	border: none;
+}
+notebook > header tab:checked button {
+	margin-top: -4px;
 }

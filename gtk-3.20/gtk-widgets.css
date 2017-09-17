@@ -198,6 +198,13 @@ menu separator {
 	border-bottom: solid 1px #ffffff;
 	margin: 3px 5px;
 }
+menuitem check,
+menuitem radio {
+	border-style: none;
+	background-image: none;
+	min-height: 16px;
+	min-width: 16px;
+}
 
 
 /* Notebooks
@@ -413,4 +420,18 @@ switch slider {
 	background-color: @bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
+}
+
+
+/* Tree View
+   ========================================================================== */
+treeview.view {
+	background: @base_color;
+}
+
+
+/* Icon View
+   ========================================================================== */
+iconview.view {
+	background: @base_color;
 }

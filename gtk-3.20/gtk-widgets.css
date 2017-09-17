@@ -1,14 +1,399 @@
-* {
-	-GtkCheckButton-indicator-size: 15;
-}
-
 .background {
 	background-color: @bg_color;
 	color: @fg_color;
 }
 
-@import url("button/gtk-button.css");
-@import url("check/gtk-check.css");
-@import url("frame/gtk-frame.css");
-@import url("radio/gtk-radio.css");
 
+/* Disabled elements
+   ========================================================================== */
+*:disabled {
+	color: @insensitive_text_color;
+	text-shadow: 1px 1px @insensitive_shadow_color;
+	-gtk-icon-effect: dim;
+}
+
+
+/* Selection
+   ========================================================================== */
+selection,
+*:selected,
+.view:selected {
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
+}
+.rubberband,
+.view.rubberband {
+	background-color: alpha(@selected_bg_color, 0.3);
+	border: 1px solid @selected_bg_color;
+}
+
+
+/* Buttons
+   ========================================================================== */
+button {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	padding: 5px;
+}
+button:active {
+	border-image: url("assets/button-active.png") 3 / 3px stretch;
+}
+button:active:hover {
+	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
+	padding: 6px 4px 4px 6px;
+}
+button.toggle:checked {
+	background-color: @base_color;
+	border-image: url("assets/button-toggled.png") 3 / 3px stretch;
+	padding: 6px 4px 4px 6px;
+}
+button:focus {
+	border-image: url("assets/button-focus.png") 3 / 3px stretch;
+}
+button:disabled {
+	border-image: url("assets/button-disabled.png") 3 / 3px stretch;
+}
+button-flat {
+	border-image: none;
+}
+button.link {
+	color: @selected_bg_color;
+}
+
+
+/* Checkboxes
+   ========================================================================== */
+check,
+check row:selected,
+check row:selected:focus {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"));
+	margin: 2px;
+}
+
+check:checked,
+check row:selected:checked,
+check row:selected:focus:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"));
+}
+
+check:checked:disabled,
+check row:selected:checked:disabled,
+check row:selected:focus:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive.png"));
+}
+
+check:disabled,
+check row:selected:disabled,
+check row:selected:focus:disabled  {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"));
+}
+
+check:indeterminated,
+check row:selected:indeterminated,
+check row:selected:focus:indeterminated {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
+}
+
+check:indeterminated:disabled,
+check row:selected:indeterminated:disabled,
+check row:selected:focus:indeterminated:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"));
+}
+
+
+/* Radio buttons
+   ========================================================================== */
+radio,
+.view.cellradio {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
+	margin: 2px;
+}
+
+radio:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"));
+}
+
+radio:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"));
+}
+
+radio:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"));
+}
+
+radio:indeterminated {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"));
+}
+
+radio:indeterminated:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"));
+}
+
+
+/* Text inputs
+   ========================================================================== */
+entry {
+	background: @base_color;
+	border: solid 2px red;
+	border-image: url("assets/entry.png");
+	border-image-slice: 2 2 2 2;
+	padding: 3px;
+}
+
+
+/* Comboboxes
+   ========================================================================== */
+combobox button {
+	background: @bg_color url("assets/combobox-down.png") no-repeat center;
+	min-width: 10px;
+	padding: 5px;
+}
+
+combobox button:not(:first-child) {
+	margin: 2px;
+}
+combobox entry {
+	margin-right: -24px;
+}
+
+combobox button:first-child {
+	background-position: right center;
+}
+
+
+/* Frames
+   ========================================================================== */
+frame > border {
+	border-image: url("assets/frame.png") 3 / 3px stretch;
+}
+
+
+/* Menus
+   ========================================================================== */
+menu {
+	border-image: url("assets/menu.png");
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 3 3 3 3;
+	padding: 3px;
+}
+menubar > menuitem {
+	border: solid 1px @bg_color;
+	padding: 4px 6px;
+}
+menubar > menuitem:hover {
+	background: transparent;
+	border-image: url("assets/menubar-button-active.png");
+	border-image-slice: 1 1 1 1;
+	color: @fg_color;
+}
+menuitem {
+	padding: 5px;
+}
+menuitem:hover {
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
+}
+menu separator {
+	border-top: solid 1px #808080;
+	border-bottom: solid 1px #ffffff;
+	margin: 3px 5px;
+}
+
+
+/* Notebooks
+   ========================================================================== */
+notebook,
+notebook > stack,
+notebook > header tab
+{
+	background: @bg_color;
+}
+/* DIRTY HACK: without this, checked tabs were not redrawn. */
+notebook tab:hover {
+	background: @bg_color;
+}
+notebook > stack {
+	border-image: url("assets/notebook.png");
+	border-style: solid;
+	border-width: 3px;
+	border-image-slice: 3 3 3 3;
+}
+notebook > header tab {
+	border-style: solid;
+}
+notebook > header.top tab {
+	border-width: 8px 5px 0 5px;
+	border-image: url("assets/tab-top.png");
+	border-image-slice: 8 5 0 5;
+	padding-bottom: 3px;
+}
+notebook > header.bottom tab {
+	border-width: 0 5px 5px 5px;
+	border-image: url("assets/tab-bottom.png");
+	border-image-slice: 0 5 5 5;
+	padding-top: 3px;
+}
+notebook > header.left tab {
+	border-width: 6px 0 7px 7px;
+	border-image: url("assets/tab-left.png");
+	border-image-slice: 6 0 7 7;
+	padding-right: 3px;
+}
+notebook > header.right tab {
+	border-width: 6px 7px 7px 0;
+	border-image: url("assets/tab-right.png");
+	border-image-slice: 6 7 7 0;
+	padding-left: 3px;
+}
+notebook > header.top tab:checked {
+	border-image: url("assets/tab-top-active.png");
+	border-image-slice: 8 5 0 5;
+	margin-bottom: -1px;
+}
+notebook > header.bottom tab:checked {
+	border-image: url("assets/tab-bottom-active.png");
+	border-image-slice: 0 5 5 5;
+	margin-top: -2px;
+}
+notebook > header.left tab:checked {
+	border-image: url("assets/tab-left-active.png");
+	border-image-slice: 6 0 7 7;
+	margin-right: -1px;
+}
+notebook > header.right tab:checked {
+	border-image: url("assets/tab-right-active.png");
+	border-image-slice: 6 7 7 0;
+	margin-left: -2px;
+}
+notebook > header.top tab:checked * {
+	margin-top: -2px;
+}
+notebook > header.bottom tab:checked * {
+	margin-top: 2px;
+}
+notebook > header.left tab:checked * {
+	margin-left: -2px;
+}
+notebook > header.right tab:checked * {
+	margin-right: -2px;
+}
+notebook > header tab button {
+	border: none;
+}
+
+
+/* Progressbars
+   ========================================================================== */
+progressbar {
+	font-size: .8em;
+}
+progressbar trough {
+	background: @bg_color;
+	border: solid 1px #808080;
+	border-bottom-color: white;
+	border-right-color: white;
+	padding: 1px;	
+}
+progressbar progress {
+	background: @selected_bg_color;
+	color: @selected_fg_color;
+}
+progressbar.horizontal,
+progressbar.horizontal progress,
+progressbar.horizontal trough {
+	min-height: 14px;
+}
+progressbar.vertical,
+progressbar.vertical progress,
+progressbar.vertical trough {
+	min-width: 14px;
+}
+
+
+/* Scale
+   ========================================================================== */
+scale.horizontal slider {
+	background-image: url("assets/scale-slider-horizontal.png");
+	min-height: 19px;
+	min-width: 11px;
+	margin: -9px -5px;
+}
+scale.vertical slider {
+	background-image: url("assets/scale-slider-vertical.png");
+	min-height: 11px;
+	min-width: 19px;
+	margin: -5px -9px;
+}
+scale trough {
+	border: solid 2px;
+}
+scale.horizontal trough {
+	border-image: url("assets/scale-horizontal.png") 2 / 2px stretch;
+	margin: 9px 5px;
+}
+scale.vertical trough {
+	border-image: url("assets/scale-vertical.png") 2 / 2px stretch;
+	margin: 5px 9px;
+}
+
+
+/* Scrollbar
+   ========================================================================== */
+scrollbar {
+	background-color: @bg_color;
+	background-image: url("assets/scrollbar.png");
+}
+scrollbar button,
+scrollbar button:hover,
+scrollbar button:hover,
+scrollbar button:active,
+scrollbar button:active:hover,
+scrollbar button:disabled,
+scrollbar button:disabled {
+	border: 0;
+	color: transparent;
+	min-height: 16px;
+	min-width: 16px;
+	padding: 0;
+}
+scrollbar.vertical button.up {
+	background-image: url("assets/scrollbar-up.png");
+}
+scrollbar.vertical button.down {
+	background-image: url("assets/scrollbar-down.png");
+}
+scrollbar.horizontal button.up {
+	background-image: url("assets/scrollbar-left.png");
+}
+scrollbar.horizontal button.down {
+	background-image: url("assets/scrollbar-right.png");
+}
+scrollbar slider {
+	background-color: @bg_color;
+	border: solid 3px;
+	border-image: url("assets/scrollbar-slider.png");
+	border-image-slice: 3 3 3 3;
+}
+scrollbar.vertical slider {
+	min-height: 4px;
+	min-width: 10px;
+}
+scrollbar.horizontal slider {
+	min-height: 10px;
+	min-width: 4px;
+}
+
+
+/* Toolbar
+   ========================================================================== */
+toolbar button {
+	border: 0;
+}
+toolbar button:disabled {
+	border: 0;
+}
+toolbar separator {
+	border-left: solid 1px #808080;
+	border-right: solid 1px #ffffff;
+	margin: 3px;
+}

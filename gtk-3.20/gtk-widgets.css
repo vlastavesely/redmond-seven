@@ -397,3 +397,20 @@ toolbar separator {
 	border-right: solid 1px #ffffff;
 	margin: 3px;
 }
+
+
+/* Switch
+   ========================================================================== */
+switch {
+	background-color: @base_color;
+	border-image: url("assets/button-toggled.png") 3 / 3px stretch;
+}
+switchtrough:disabled,
+switchtrough:disabled:active {
+	color: @insensitive_fg_color;
+}
+switch slider {
+	background-color: @bg_color;
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	margin: 2px;
+}

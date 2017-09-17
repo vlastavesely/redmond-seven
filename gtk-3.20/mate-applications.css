@@ -28,7 +28,7 @@
 /* Mate Panel
    ========================================================================== */
 PanelToplevel > grid {
-	border-image: url("button/button.png") 2 / 2px stretch;
+	border-image: url("assets/button.png") 2 / 2px stretch;
 	margin: -2px -2px 0 -2px;
 	padding: 4px;
 }

@@ -4,6 +4,9 @@
 @define-color base_color #ffffff;
 @define-color text_color #000000;
 
+@define-color tooltip_bg_color #ffffbf;
+@define-color tooltip_fg_color #000000;
+
 @define-color selected_bg_color #0a246a;
 @define-color selected_fg_color #ffffff;
 

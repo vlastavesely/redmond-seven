@@ -435,3 +435,16 @@ treeview.view {
 iconview.view {
 	background: @base_color;
 }
+
+
+/* Tooltips
+   ========================================================================== */
+tooltip,
+tooltip.background  {
+	background-color: @tooltip_bg_color;
+	border: solid 1px alpha(@tooltip_fg_color, .3);
+	color: alpha(@tooltip_fg_color, .8);
+}
+tooltip *, .tooltip * {
+	background-color: transparent;
+}

@@ -133,10 +133,8 @@ radio:indeterminated:disabled {
    ========================================================================== */
 entry {
 	background: @base_color;
-	border: solid 2px red;
-	border-image: url("assets/entry.png");
-	border-image-slice: 2 2 2 2;
-	padding: 3px;
+	border-image: url("assets/entry.png") 2 / 2px stretch;
+	padding: 5px;
 }
 
 
@@ -170,10 +168,7 @@ frame > border {
 /* Menus
    ========================================================================== */
 menu {
-	border-image: url("assets/menu.png");
-	border-style: solid;
-	border-width: 3px;
-	border-image-slice: 3 3 3 3;
+	border-image: url("assets/menu.png") 3 / 3px stretch;
 	padding: 3px;
 }
 menubar > menuitem {
@@ -182,8 +177,7 @@ menubar > menuitem {
 }
 menubar > menuitem:hover {
 	background: transparent;
-	border-image: url("assets/menubar-button-active.png");
-	border-image-slice: 1 1 1 1;
+	border-image: url("assets/menubar-button-active.png") 1 / 1px stretch;
 	color: @fg_color;
 }
 menuitem {
@@ -220,10 +214,7 @@ notebook tab:hover {
 	background: @bg_color;
 }
 notebook > stack {
-	border-image: url("assets/notebook.png");
-	border-style: solid;
-	border-width: 3px;
-	border-image-slice: 3 3 3 3;
+	border-image: url("assets/notebook.png") 3 / 3px stretch;
 }
 notebook > header tab {
 	border-style: solid;
@@ -375,16 +366,14 @@ scrollbar.horizontal button.down {
 }
 scrollbar slider {
 	background-color: @bg_color;
-	border: solid 3px;
-	border-image: url("assets/scrollbar-slider.png");
-	border-image-slice: 3 3 3 3;
+	border-image: url("assets/scrollbar-slider.png") 3 / 3px stretch;
 }
 scrollbar.vertical slider {
 	min-height: 4px;
-	min-width: 10px;
+	min-width: 16px;
 }
 scrollbar.horizontal slider {
-	min-height: 10px;
+	min-height: 16px;
 	min-width: 4px;
 }
 

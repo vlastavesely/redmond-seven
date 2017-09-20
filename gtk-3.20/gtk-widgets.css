@@ -352,10 +352,8 @@ scrollbar {
 }
 scrollbar button,
 scrollbar button:hover,
-scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
-scrollbar button:disabled,
 scrollbar button:disabled {
 	border: 0;
 	color: transparent;

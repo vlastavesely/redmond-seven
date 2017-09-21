@@ -1,3 +1,9 @@
+/***********
+ * general *
+ ***********/
+* {
+	-gtk-icon-style: regular; /* disable symbolic icons */
+}
 .background {
 	background-color: @bg_color;
 	color: @fg_color;
@@ -177,11 +183,19 @@ menu separator {
 	margin: 3px 5px;
 }
 menuitem check,
+menuitem radio,
+menuitem arrow {
+	min-height: 16px;
+	min-width: 16px;
+}
+menuitem check,
 menuitem radio {
 	border-style: none;
 	background-image: none;
-	min-height: 16px;
-	min-width: 16px;
+}
+menuitem > arrow {
+	margin-left: 10px;
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 /*************

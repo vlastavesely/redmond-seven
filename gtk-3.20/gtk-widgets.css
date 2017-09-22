@@ -8,6 +8,9 @@
 	background-color: @bg_color;
 	color: @fg_color;
 }
+.view {
+	background: @base_color;
+}
 
 /*********************
  * disabled elements *
@@ -37,6 +40,7 @@ selection,
  * buttons *
  ***********/
 button {
+	background-color: @bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	padding: 5px;
 }
@@ -119,7 +123,7 @@ radio:checked:disabled {
 }
 
 /**************
- * text inout *
+ * text input *
  **************/
 entry {
 	background: @base_color;
@@ -135,14 +139,12 @@ combobox button {
 	min-width: 10px;
 	padding: 5px;
 }
-
 combobox button:not(:first-child) {
 	margin: 2px;
 }
 combobox entry {
 	margin-right: -24px;
 }
-
 combobox button:first-child {
 	background-position: right center;
 }
@@ -158,6 +160,7 @@ frame > border {
  * menus *
  *********/
 menu {
+	border: solid 3px;
 	border-image: url("assets/menu.png") 3 / 3px stretch;
 	padding: 3px;
 }
@@ -401,20 +404,6 @@ switch slider {
 	background-color: @bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
-}
-
-/************
- * treeview *
- ************/
-treeview.view {
-	background: @base_color;
-}
-
-/************
- * iconview *
- ************/
-iconview.view {
-	background: @base_color;
 }
 
 /************

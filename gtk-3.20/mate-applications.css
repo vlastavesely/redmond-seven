@@ -5,7 +5,7 @@
 	padding: 0px;
 }
 .caja-navigation-window notebook > stack {
-	border: solid 1px darker(@base_color);
+	border: solid 1px darker(@theme_base_color);
 }
 .caja-side-pane treeview {
 	padding: 2px 0;
@@ -14,15 +14,15 @@
 	border: 0;
 }
 .caja-navigation-window notebook .view {
-	background: @base_color;
+	background: @theme_base_color;
 }
 .caja-navigation-window notebook .view:selected {
-	background-color: @selected_bg_color;
-	color: @selected_fg_color;
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 .caja-navigation-window notebook .view.rubberband {
-	background-color: alpha(@selected_bg_color, 0.3);
-	border: 1px solid @selected_bg_color;
+	background-color: alpha(@theme_selected_bg_color, 0.3);
+	border: 1px solid @theme_selected_bg_color;
 }
 
 /* Mate Panel

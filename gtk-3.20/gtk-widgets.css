@@ -389,6 +389,18 @@ toolbar separator {
 	margin: 3px;
 }
 
+/**************
+ * separators *
+ **************/
+separator.horizontal {
+	border-top: solid 1px #808080;
+	border-bottom: solid 1px #ffffff;
+}
+separator.vertical {
+	border-left: solid 1px #808080;
+	border-right: solid 1px #ffffff;
+}
+
 /**********
  * switch *
  **********/
@@ -455,9 +467,9 @@ dialog filechooser .path-bar image {
 	margin-right: 5px;
 }
 dialog filechooser .frame.sidebar separator {
-	border-image: url("assets/menu-separator.png") 1 / 1px stretch;
+	border-top: solid 1px #808080;
+	border-bottom: solid 1px #ffffff;
 	margin: 3px 5px;
-	padding: 1px;
 }
 dialog filechooser actionbar {
 	border-image: url("assets/frame.png") 3 / 3px stretch;

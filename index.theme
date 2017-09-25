@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Redmond Classic
+Name=Redmond Seven
 Comment=Windows 7 for Linux Desktops
 Version=v1.0
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Redmond Classic
+GtkTheme=Redmond Seven
 ButtonLayout=:minimize,maximize,close

@@ -172,6 +172,7 @@ combobox entry {
 }
 combobox button:first-child {
 	background-position: right center;
+	padding-right: 30px;
 }
 
 /**********

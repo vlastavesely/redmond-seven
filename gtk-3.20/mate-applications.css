@@ -70,3 +70,10 @@ MatePanelAppletFrameDBus {
 	border-image: url("assets/menubar-button-active.png") 2 / 2px stretch;
 	padding: 0 6px;
 }
+
+/******************
+ * GvcMixerDialog *
+ ******************/
+GvcMixerDialog border {
+	padding: 10px;
+}

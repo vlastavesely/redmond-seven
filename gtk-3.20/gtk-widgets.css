@@ -356,6 +356,16 @@ scale.vertical trough {
 	border-image: url("assets/scale-vertical.png") 2 / 2px stretch;
 	margin: 5px 9px;
 }
+scale.horizontal mark indicator {
+	background-color: shade(@theme_bg_color, 0.56);
+	min-height: 8px;
+	min-width: 1px; 
+}
+scale.vertical mark indicator {
+	background-color: shade(@theme_bg_color, 0.56);
+	min-height: 1px;
+	min-width: 8px; 
+}
 
 /*************
  * scrollbar *

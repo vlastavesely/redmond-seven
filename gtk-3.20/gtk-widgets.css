@@ -76,7 +76,8 @@ button:active:hover {
 	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
 	padding: 6px 4px 4px 6px;
 }
-button.toggle:checked {
+button.toggle:checked,
+stackswitcher button:checked {
 	background-color: @theme_base_color;
 	border-image: url("assets/button-toggled.png") 3 / 3px stretch;
 	padding: 6px 4px 4px 6px;

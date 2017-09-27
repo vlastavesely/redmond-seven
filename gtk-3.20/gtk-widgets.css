@@ -357,12 +357,12 @@ scale.vertical trough {
 	margin: 5px 9px;
 }
 scale.horizontal mark indicator {
-	background-color: shade(@theme_bg_color, 0.56);
+	background-color: shade(@theme_bg_color, 0.5);
 	min-height: 8px;
 	min-width: 1px; 
 }
 scale.vertical mark indicator {
-	background-color: shade(@theme_bg_color, 0.56);
+	background-color: shade(@theme_bg_color, 0.5);
 	min-height: 1px;
 	min-width: 8px; 
 }
@@ -408,6 +408,27 @@ scrollbar.vertical slider {
 scrollbar.horizontal slider {
 	min-height: 16px;
 	min-width: 4px;
+}
+
+/*************************************************************
+ * the fucking shitty GTK3 window's headerbar and decoration *
+ *************************************************************/
+headerbar {
+	background-color: @theme_bg_color;
+	border-bottom: solid 1px shade(@theme_bg_color, .8);
+	padding: 7px;
+}
+decoration {
+	background-color: @theme_bg_color;
+	border: solid 3px @theme_bg_color;
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
+
+/************
+ * popovers *
+ ************/
+popover {
+	border: solid 1px shade(@theme_bg_color, 0.5);
 }
 
 /***********

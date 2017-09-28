@@ -346,8 +346,14 @@ scale.vertical slider {
 	min-width: 19px;
 	margin: -5px -9px;
 }
+scale.horizontal slider:disabled {
+	background-image: url("assets/scale-slider-horizontal-disabled.png");
+}
+scale.vertical slider:disabled {
+	background-image: url("assets/scale-slider-vertical-disabled.png");
+}
 scale trough {
-	border: solid 2px;
+	border: solid 1px;
 }
 scale.horizontal trough {
 	border-image: url("assets/scale-horizontal.png") 2 / 2px stretch;
@@ -356,6 +362,12 @@ scale.horizontal trough {
 scale.vertical trough {
 	border-image: url("assets/scale-vertical.png") 2 / 2px stretch;
 	margin: 5px 9px;
+}
+scale.horizontal trough:disabled {
+	border-image: url("assets/scale-horizontal-disabled.png") 2 / 2px stretch;
+}
+scale.vertical trough:disabled {
+	border-image: url("assets/scale-vertical-disabled.png") 2 / 2px stretch;
 }
 scale.horizontal mark indicator {
 	background-color: shade(@theme_bg_color, 0.5);
@@ -367,6 +379,7 @@ scale.vertical mark indicator {
 	min-height: 1px;
 	min-width: 8px; 
 }
+
 
 /*************
  * scrollbar *
@@ -474,6 +487,9 @@ switch slider {
 	background-color: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
+}
+switch:disabled slider {
+	border-image: url("assets/button-disabled.png") 3 / 3px stretch;
 }
 
 /************

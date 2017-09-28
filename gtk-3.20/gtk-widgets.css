@@ -380,7 +380,6 @@ scale.vertical mark indicator {
 	min-width: 8px; 
 }
 
-
 /*************
  * scrollbar *
  *************/
@@ -549,6 +548,26 @@ dialog filechooser actionbar {
 	border-image: url("assets/frame.png") 3 / 3px stretch;
 	margin-top: 5px;
 	padding: 7px;
+}
+
+/************************
+ * color chooser dialog *
+ ************************/
+dialog colorchooser colorswatch {
+	border-image: url("assets/entry.png") 3 / 3px stretch;
+	padding: 2px;
+}
+dialog colorchooser colorswatch.dark * {
+	color: white;
+}
+dialog colorchooser colorswatch.light * {
+	color: black;
+}
+dialog colorchooser #add-color-button {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
+dialog colorchooser colorswatch:selected * {
+	background: transparent;
 }
 
 /*********************

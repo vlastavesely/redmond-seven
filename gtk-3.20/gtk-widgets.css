@@ -309,12 +309,12 @@ notebook > header tab button {
 progressbar {
 	font-size: .8em;
 }
-progressbar trough {
+progressbar trough, levelbar trough {
 	background: @theme_bg_color;
 	border: solid 1px #808080;
 	border-bottom-color: white;
 	border-right-color: white;
-	padding: 1px;	
+	padding: 1px;
 }
 progressbar progress {
 	background: @theme_selected_bg_color;
@@ -329,6 +329,18 @@ progressbar.vertical,
 progressbar.vertical progress,
 progressbar.vertical trough {
 	min-width: 14px;
+}
+
+/************
+ * levelbar *
+ ************/
+levelbar block {
+	margin: 1px;
+	padding: 3px;
+}
+levelbar block.filled {
+	background: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 
 /*********

@@ -502,6 +502,10 @@ switch slider {
 switch:disabled slider {
 	border-image: url("assets/button-disabled.png") 3 / 3px stretch;
 }
+switch:checked {
+	background: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
 
 /************
  * tooltips *

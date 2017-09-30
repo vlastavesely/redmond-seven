@@ -449,6 +449,18 @@ decoration {
 	border-image: url("assets/button.png") 3 / 3px stretch;
 }
 
+/****************************
+ * application notification *
+ ****************************/
+.app-notification {
+	background-color: @theme_info_bg_color;
+	border-image: url("assets/frame.png") 3 / 3px stretch;
+	padding: 7px;
+}
+.app-notification border {
+	border: 0;
+}
+
 /************
  * popovers *
  ************/

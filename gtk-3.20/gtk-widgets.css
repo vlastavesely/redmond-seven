@@ -578,9 +578,9 @@ dialog filechooser actionbar {
 	padding: 7px;
 }
 
-/************************
- * color chooser dialog *
- ************************/
+/*****************
+ * color chooser *
+ *****************/
 dialog colorchooser colorswatch {
 	border-image: url("assets/entry.png") 3 / 3px stretch;
 	padding: 2px;
@@ -596,6 +596,10 @@ dialog colorchooser #add-color-button {
 }
 dialog colorchooser colorswatch:selected * {
 	background: transparent;
+}
+colorchooser .popover {
+	background: @theme_bg_color;
+	border-image: url("assets/button.png") 3 / 3px stretch;
 }
 
 /*********************

@@ -181,6 +181,13 @@ combobox button:first-child {
  **********/
 frame > border {
 	border-image: url("assets/frame.png") 3 / 3px stretch;
+	padding: 2px;
+}
+.sidebar,
+scrolledwindow,
+scrolledwindow.frame {
+	border-image: url("assets/frame.png") 3 / 3px stretch;
+	padding: 2px;
 }
 
 /*********
@@ -481,6 +488,13 @@ toolbar separator {
 	border-left: solid 1px #808080;
 	border-right: solid 1px #ffffff;
 	margin: 3px;
+}
+
+/*************
+ * listboxes *
+ *************/
+list row {
+	padding: 5px;
 }
 
 /**************

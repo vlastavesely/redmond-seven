@@ -27,9 +27,6 @@
 .caja-navigation-window tab button:active:hover {
 	padding: 0px;
 }
-.caja-navigation-window notebook > stack {
-	border: solid 1px darker(@theme_base_color);
-}
 .caja-side-pane treeview {
 	padding: 2px 0;
 }
@@ -38,6 +35,7 @@
 }
 .caja-navigation-window notebook .view {
 	background: @theme_base_color;
+	margin: 2px;
 }
 .caja-navigation-window notebook *:selected {
 	background: @theme_bg_color;

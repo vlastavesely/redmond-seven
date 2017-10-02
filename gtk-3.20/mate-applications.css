@@ -53,6 +53,10 @@
 	background: @theme_info_bg_color;
 	margin: 2px 2px 0 2px;
 }
+.caja-desktop-window box,
+.caja-desktop-window scrolledwindow {
+	border: 0;
+}
 
 /**************
  * Mate Panel *

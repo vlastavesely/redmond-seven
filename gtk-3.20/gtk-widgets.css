@@ -30,6 +30,9 @@
 .view {
 	background: @theme_base_color;
 }
+.flat:not(:hover):not(:checked) {
+	border: 0;
+}
 
 /*********************
  * disabled elements *
@@ -87,9 +90,6 @@ button:focus {
 }
 button:disabled {
 	border-image: url("assets/button-disabled.png") 3 / 3px stretch;
-}
-button-flat {
-	border-image: none;
 }
 button.link {
 	color: @theme_selected_bg_color;
@@ -478,12 +478,6 @@ popover {
 /***********
  * toolbar *
  ***********/
-toolbar button {
-	border: 0;
-}
-toolbar button:disabled {
-	border: 0;
-}
 toolbar separator {
 	border-left: solid 1px #808080;
 	border-right: solid 1px #ffffff;

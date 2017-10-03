@@ -58,6 +58,14 @@
 	border: 0;
 }
 
+/*********
+ * Pluma *
+ *********/
+.pluma-window notebook header tabs {
+	min-height: 26px;
+	min-width: 26px;
+}
+
 /**************
  * Mate Panel *
  **************/

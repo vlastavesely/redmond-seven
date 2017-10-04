@@ -54,7 +54,8 @@
 	margin: 2px 2px 0 2px;
 }
 .caja-desktop-window box,
-.caja-desktop-window scrolledwindow {
+.caja-desktop-window scrolledwindow,
+.caja-navigation-window statusbar frame {
 	border: 0;
 }
 
@@ -64,6 +65,19 @@
 .pluma-window notebook header tabs {
 	min-height: 26px;
 	min-width: 26px;
+}
+.pluma-window statusbar > *:last-child {
+	padding-right: 5px;
+}
+
+/*****************
+ * Mate Terminal *
+ *****************/
+.mate-terminal notebook stack {
+	padding: 0;
+}
+.mate-terminal notebook header {
+	padding-bottom: 2px;
 }
 
 /**************

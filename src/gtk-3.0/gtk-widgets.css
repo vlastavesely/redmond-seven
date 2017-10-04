@@ -301,6 +301,9 @@ notebook tab button {
 	background-color: transparent;
 	border: 0;
 }
+notebook stack {
+	padding: 2px;
+}
 
 /****************
  * progressbars *
@@ -478,6 +481,25 @@ toolbar separator {
 	border-left: solid 1px #808080;
 	border-right: solid 1px #ffffff;
 	margin: 3px;
+}
+
+/*************
+ * statusbar *
+ *************/
+statusbar button {
+	padding: 2px;
+}
+statusbar button:active:hover,
+statusbar button.toggle:checked,
+statusbar button.toggle:active:hover {
+	padding: 3px 1px 1px 3px;
+}
+statusbar {
+	margin: 0 -9px;
+}
+statusbar frame,
+statusbar > label {
+	border-image: url("assets/frame.png") 2 / 2px stretch;
 }
 
 /*************

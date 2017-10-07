@@ -595,6 +595,11 @@ tooltip *, .tooltip * {
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 	padding: 5px 10px;
 }
+dialog filechooser placessidebar button {
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
 dialog filechooser .frame.sidebar .sidebar-row label {
 	padding-left: 7px;
 }

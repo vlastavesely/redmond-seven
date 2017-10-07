@@ -190,6 +190,19 @@ scrolledwindow.frame {
 	padding: 2px;
 }
 
+/**************
+ * button box *
+ **************/
+buttonbox.horizontal button {
+	margin: 3px 5px;
+}
+buttonbox.horizontal button:first-child {
+	margin-left: 0;
+}
+buttonbox.horizontal button:last-child {
+	margin-lright: 0;
+}
+
 /*********
  * menus *
  *********/

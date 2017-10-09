@@ -414,31 +414,30 @@ scale.vertical mark indicator {
  * scrollbar *
  *************/
 scrollbar {
-	background-color: @theme_bg_color;
-	background-image: url("assets/scrollbar.png");
+	background: @theme_bg_color url("assets/scrollbar.png");
 }
 scrollbar button,
 scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	border: 0;
-	color: transparent;
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	color: black;
 	min-height: 16px;
 	min-width: 16px;
 	padding: 0;
 }
 scrollbar.vertical button.up {
-	background-image: url("assets/scrollbar-up.png");
+	-gtk-icon-source: url("assets/scrollbar-up.png");
 }
 scrollbar.vertical button.down {
-	background-image: url("assets/scrollbar-down.png");
+	-gtk-icon-source: url("assets/scrollbar-down.png");
 }
 scrollbar.horizontal button.up {
-	background-image: url("assets/scrollbar-left.png");
+	-gtk-icon-source: url("assets/scrollbar-left.png");
 }
 scrollbar.horizontal button.down {
-	background-image: url("assets/scrollbar-right.png");
+	-gtk-icon-source: url("assets/scrollbar-right.png");
 }
 scrollbar slider {
 	background-color: @theme_bg_color;

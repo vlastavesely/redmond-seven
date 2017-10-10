@@ -201,7 +201,7 @@ buttonbox.horizontal button:first-child {
 	margin-left: 0;
 }
 buttonbox.horizontal button:last-child {
-	margin-lright: 0;
+	margin-right: 0;
 }
 
 /*********
@@ -252,13 +252,9 @@ menuitem > arrow {
 /*************
  * notebooks *
  *************/
-notebook > stack {
+notebook.frame > stack {
 	border-image: url("assets/notebook.png") 3 / 3px stretch;
 	padding: 2px;
-}
-notebook > stack:first-child {
-	border: none;
-	padding: 0;
 }
 notebook header.top tabs {
 	margin-top: 3px;

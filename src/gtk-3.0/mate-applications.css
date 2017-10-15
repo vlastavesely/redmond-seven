@@ -42,6 +42,9 @@
 	background: @theme_base_color;
 	border: 0;
 }
+.caja-navigation-window notebook scrolledwindow {
+	padding: 0;
+}
 .caja-navigation-window notebook *:selected {
 	background: @theme_bg_color;
 	color: @theme_fg_color;
@@ -56,7 +59,6 @@
 }
 .caja-notebook stack > box > frame > border {
 	background: @theme_info_bg_color;
-	margin: 2px 2px 0 2px;
 }
 .caja-desktop-window box,
 .caja-desktop-window scrolledwindow,

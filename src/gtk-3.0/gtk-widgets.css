@@ -220,6 +220,9 @@ menubar > menuitem:hover {
 	border-image: url("assets/menubar-button-active.png") 1 / 1px stretch;
 	color: @theme_fg_color;
 }
+menubar decoration {
+	border: 0;
+}
 menuitem {
 	padding: 5px;
 }
@@ -579,6 +582,9 @@ tooltip.background  {
 }
 tooltip *, .tooltip * {
 	background-color: transparent;
+}
+tooltip decoration {
+	border: 0;
 }
 
 /************

@@ -220,7 +220,8 @@ menubar > menuitem:hover {
 	border-image: url("assets/menubar-button-active.png") 1 / 1px stretch;
 	color: @theme_fg_color;
 }
-menubar decoration {
+menubar decoration,
+.popup decoration {
 	border: 0;
 }
 menuitem {

@@ -177,7 +177,7 @@ frame > border {
 }
 frame { /* LibreOffice combobox's dropdown */
 	border-image: url("assets/menu.png") 3 / 3px stretch;
-	padding: 3px; 
+	padding: 3px;
 }
 box > frame {
 	border: 0;
@@ -413,12 +413,12 @@ scale.vertical trough:disabled {
 scale.horizontal mark indicator {
 	background-color: shade(@theme_bg_color, 0.5);
 	min-height: 8px;
-	min-width: 1px; 
+	min-width: 1px;
 }
 scale.vertical mark indicator {
 	background-color: shade(@theme_bg_color, 0.5);
 	min-height: 1px;
-	min-width: 8px; 
+	min-width: 8px;
 }
 
 /*************

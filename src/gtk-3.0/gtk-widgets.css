@@ -102,6 +102,8 @@ check row:selected,
 check row:selected:focus {
 	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"));
 	margin: .3em .4em .3em .3em;
+	min-height: 1em;
+	min-width: 1em;
 }
 check:checked,
 check row:selected:checked,
@@ -136,6 +138,8 @@ radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
 	margin: .3em .4em .3em .3em;
+	min-height: 1em;
+	min-width: 1em;
 }
 radio:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"));
@@ -192,7 +196,7 @@ scrolledwindow.frame {
  * button box *
  **************/
 buttonbox.horizontal button {
-	margin: 3px 5px;
+	margin: .2em .4em;
 }
 buttonbox.horizontal button:first-child {
 	margin-left: 0;
@@ -234,11 +238,12 @@ menu separator {
 	border-bottom: solid 1px #ffffff;
 	margin: .2em .4em;
 }
-menuitem check,
-menuitem radio,
-menuitem arrow {
-	min-height: 16px;
-	min-width: 16px;
+menuitem > check,
+menuitem > radio,
+menuitem > arrow,
+menuitem > image {
+	min-height: 1em;
+	min-width: 1em;
 }
 menuitem check,
 menuitem radio {
@@ -350,12 +355,12 @@ progressbar progress {
 progressbar.horizontal,
 progressbar.horizontal progress,
 progressbar.horizontal trough {
-	min-height: 14px;
+	min-height: 1em;
 }
 progressbar.vertical,
 progressbar.vertical progress,
 progressbar.vertical trough {
-	min-width: 14px;
+	min-width: 1em;
 }
 
 /************
@@ -373,23 +378,28 @@ levelbar block.filled {
 /*********
  * scale *
  *********/
+scale slider {
+	background-color: @theme_bg_color;
+	border-image: url("assets/scale-slider.png") 2 / 2px stretch;
+}
+scale slider:disabled {
+	border-image: url("assets/scale-slider-disabled.png") 2 / 2px stretch;
+}
+scale.horizontal {
+	padding: .6em 0;
+}
+scale.vertical {
+	padding: 0 .6em;
+}
 scale.horizontal slider {
-	background-image: url("assets/scale-slider-horizontal.png");
-	min-height: 19px;
-	min-width: 11px;
-	margin: -9px -5px;
+	min-height: 1.6em;
+	min-width: .8em;
+	margin: -.8em -.4em;
 }
 scale.vertical slider {
-	background-image: url("assets/scale-slider-vertical.png");
-	min-height: 11px;
-	min-width: 19px;
-	margin: -5px -9px;
-}
-scale.horizontal slider:disabled {
-	background-image: url("assets/scale-slider-horizontal-disabled.png");
-}
-scale.vertical slider:disabled {
-	background-image: url("assets/scale-slider-vertical-disabled.png");
+	min-height: .8em;
+	min-width: 1.6em;
+	margin: -.4em -.8em;
 }
 scale trough {
 	border: solid 1px;
@@ -607,7 +617,7 @@ tooltip decoration {
  * file chooser dialog *
  ***********************/
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
-	padding: 5px 10px;
+	padding: .3em 1em;
 }
 dialog filechooser placessidebar button {
 	background: transparent;
@@ -615,7 +625,7 @@ dialog filechooser placessidebar button {
 	padding: 0;
 }
 dialog filechooser .frame.sidebar .sidebar-row label {
-	padding-left: 7px;
+	padding-left: .8em;
 }
 dialog filechooser stack {
 	background: @theme_bg_color;

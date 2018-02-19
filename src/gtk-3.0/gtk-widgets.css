@@ -211,7 +211,7 @@ menu {
 }
 menubar > menuitem {
 	border: solid 1px @theme_bg_color;
-	padding: 4px 6px;
+	padding: .2em .5em;
 }
 menubar > menuitem:hover {
 	background: transparent;
@@ -223,7 +223,7 @@ menubar decoration,
 	border: 0;
 }
 menuitem {
-	padding: 5px;
+	padding: .3em;
 }
 menuitem:hover {
 	background-color: @theme_selected_bg_color;
@@ -232,7 +232,7 @@ menuitem:hover {
 menu separator {
 	border-top: solid 1px #808080;
 	border-bottom: solid 1px #ffffff;
-	margin: 3px 5px;
+	margin: .2em .4em;
 }
 menuitem check,
 menuitem radio,
@@ -271,7 +271,7 @@ notebook header.right tabs {
 }
 notebook tab {
 	background: @theme_bg_color;
-	padding: 5px;
+	padding: .4em;
 }
 notebook header.top tab {
 	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
@@ -561,7 +561,7 @@ switch slider {
 	background-color: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
-	padding: .5em;
+	padding: .3em;
 }
 switch:disabled slider {
 	border-image: url("assets/button-disabled.png") 3 / 3px stretch;

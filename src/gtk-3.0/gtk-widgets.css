@@ -440,36 +440,50 @@ scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	border-image: url("assets/button.png") 3 / 3px stretch;
+	border-image: url("assets/scrollbar-slider.png") 3 / 3px stretch;
 	color: black;
-	min-height: 16px;
-	min-width: 16px;
-	padding: 0;
+	font-size: .8em;
+	min-height: .8rem;
+	min-width: .8rem;
+	padding: .18rem;
 }
 scrollbar.vertical button.up {
-	-gtk-icon-source: url("assets/scrollbar-up.png");
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 scrollbar.vertical button.down {
-	-gtk-icon-source: url("assets/scrollbar-down.png");
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 scrollbar.horizontal button.up {
-	-gtk-icon-source: url("assets/scrollbar-left.png");
+	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 scrollbar.horizontal button.down {
-	-gtk-icon-source: url("assets/scrollbar-right.png");
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 scrollbar slider {
 	background-color: @theme_bg_color;
 	border-image: url("assets/scrollbar-slider.png") 3 / 3px stretch;
 }
 scrollbar.vertical slider {
-	min-height: 4px;
-	min-width: 16px;
+	min-height: .5rem;
+	min-width: .8rem;
+	padding: .18rem;
 }
 scrollbar.horizontal slider {
-	min-height: 16px;
-	min-width: 4px;
+	min-height: .8rem;
+	min-width: .5rem;
+	padding: .18rem;
 }
+
+/*
+scrollbar.vertical slider {
+	min-height: .5rem;
+	min-width: 1rem;
+}
+scrollbar.horizontal slider {
+	min-height: 1rem;
+	min-width: .5rem;
+}
+*/
 
 /*************************************************************
  * the fucking shitty GTK3 window's headerbar and decoration *

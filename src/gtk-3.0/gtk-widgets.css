@@ -565,6 +565,7 @@ separator.vertical {
 switch {
 	background-color: @theme_base_color;
 	border-image: url("assets/button-toggled.png") 3 / 3px stretch;
+	min-height: 2em;
 }
 switchtrough:disabled,
 switchtrough:disabled:active {

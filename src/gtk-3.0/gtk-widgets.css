@@ -166,8 +166,8 @@ entry {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	min-height: 16px;
-	min-width: 16px;
+	min-height: .8em;
+	min-width: .8em;
 }
 
 /**********

@@ -539,6 +539,9 @@ statusbar frame,
 statusbar > label {
 	border-image: url("assets/frame.png") 2 / 2px stretch;
 }
+statusbar frame {
+	padding: 0;
+}
 
 /*************
  * listboxes *

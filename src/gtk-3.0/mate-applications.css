@@ -70,8 +70,8 @@
  * Pluma *
  *********/
 .pluma-window notebook header tabs {
-	min-height: 26px;
-	min-width: 26px;
+	min-height: 2.2em;
+	min-width: 2.2em;
 }
 .pluma-window statusbar > *:last-child {
 	padding-right: 5px;
@@ -99,7 +99,8 @@ PanelToplevel > grid {
 	border: 0;
 }
 MatePanelAppletFrameDBus {
-	background: transparent no-repeat left center url("assets/mate-panel-frame.png");
+	background: transparent no-repeat left center url("assets/mate-panel-background.png");
+	border-image: url("assets/mate-panel-frame.png") 2 / 2px stretch;
 }
 .mate-panel-menu-bar {
 	border-image: url("assets/menubar-button-active.png") 2 / 2px stretch;

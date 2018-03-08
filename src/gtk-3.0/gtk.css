@@ -17,4 +17,25 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-@import url("gtk-main.css");
+/* Default color scheme */
+@define-color theme_bg_color #d4d0c8;
+@define-color theme_fg_color #000000;
+@define-color theme_base_color #ffffff;
+@define-color theme_text_color #000000;
+
+@define-color theme_tooltip_bg_color #ffffbf;
+@define-color theme_tooltip_fg_color #000000;
+
+@define-color theme_selected_bg_color #0a246a;
+@define-color theme_selected_fg_color #ffffff;
+
+@define-color theme_insensitive_text_color #808080;
+@define-color theme_insensitive_shadow_color @base_color;
+
+@define-color theme_info_bg_color #a7c6e1;
+@define-color theme_warning_bg_color #fcaf3e;
+@define-color theme_error_bg_color #f03838;
+
+@import url("gtk-widgets.css");
+
+@import url("mate-applications.css");

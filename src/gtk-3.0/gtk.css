@@ -37,5 +37,5 @@
 @define-color theme_error_bg_color #f03838;
 
 @import url("gtk-widgets.css");
-
 @import url("mate-applications.css");
+@import url("other-applications.css");

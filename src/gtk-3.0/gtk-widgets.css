@@ -68,18 +68,18 @@ selection:focus,
 /***********
  * buttons *
  ***********/
-button {
+button, .button {
 	background-color: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	padding: .4em;
 }
-button:active {
+button:active, .button:active {
 	border-image: url("assets/button-active.png") 3 / 3px stretch;
 }
-button:active:hover {
+button:active:hover, .button:active:hover {
 	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
 }
-button.toggle:checked,
+button.toggle:checked, .button.toggle:checked,
 stackswitcher button:checked {
 	background-color: @theme_base_color;
 	border-image: url("assets/button-toggled.png") 3 / 3px stretch;
@@ -446,7 +446,7 @@ scrollbar button:disabled {
 	font-size: .8em;
 	min-height: .8rem;
 	min-width: .8rem;
-	padding: .18rem;
+	padding: 3px;
 }
 scrollbar.vertical button.up {
 	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
@@ -467,12 +467,12 @@ scrollbar slider {
 scrollbar.vertical slider {
 	min-height: .5rem;
 	min-width: .8rem;
-	padding: .18rem;
+	padding: 3px;
 }
 scrollbar.horizontal slider {
 	min-height: .8rem;
 	min-width: .5rem;
-	padding: .18rem;
+	padding: 3px;
 }
 
 /********************************
